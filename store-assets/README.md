@@ -7,7 +7,6 @@ Prepared brand assets are original geometric artwork. They are not evidence of a
 | icons/ | fitflow-play-icon.png, 512 × 512 RGB PNG; app-store listing icon |
 | screenshots/ | Actual captured app screenshots; label web previews separately from Android device evidence |
 | feature-graphics/ | fitflow-feature.png, 1024 × 500 RGB PNG; prepared Play feature graphic |
-| promo/ | Optional genuine promotional media; empty until captured/prepared |
 
 Runtime launcher assets are assets/icon.png (1024 × 1024), assets/adaptive-icon.png (transparent 1024 × 1024 foreground with centered safe-area mark), and assets/splash.png. Android supplies the adaptive background from app.json.
 

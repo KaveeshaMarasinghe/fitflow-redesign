@@ -26,7 +26,7 @@ def font(size):
 
 if __name__ == '__main__':
     (ROOT / 'assets').mkdir(exist_ok=True)
-    for folder in ['icons', 'screenshots', 'feature-graphics', 'promo']:
+    for folder in ['icons', 'screenshots', 'feature-graphics']:
         (ROOT / 'store-assets' / folder).mkdir(parents=True, exist_ok=True)
     icon = save_mark('icon.png', .72, INK)
     icon.resize((512, 512), Image.Resampling.LANCZOS).convert('RGB').save(ROOT / 'store-assets/icons/fitflow-play-icon.png', optimize=True)

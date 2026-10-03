@@ -2,7 +2,7 @@
 
 A visually complete fitness prototype for IT3060 Human Computer Interaction Lab Exercise 06. Built with React Native, Expo CLI, TypeScript, and Expo Router, with realistic local sample data and Android release preparation.
 
-The runnable app is at this repository's root. The existing Lab 05 design/architecture documents and frontend/backend/AI placeholder folders are retained as historical work. This lab implements an Expo prototype instead of the earlier proposed Flutter stack.
+The runnable app is at this repository's root. The existing Lab 05 design/architecture documents are retained as historical work. This lab implements an Expo prototype instead of the earlier proposed Flutter stack.
 
 ## Technologies
 
