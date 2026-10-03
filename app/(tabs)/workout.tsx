@@ -6,6 +6,7 @@ import { Sheet } from '../../components/Sheet';
 import { colors, fonts } from '../../constants/theme';
 import { useApp } from '../../data/AppProvider';
 import { recommendation } from '../../data/mock';
+import { AppPhoto } from '../../components/AppPhoto';
 
 export default function Workout() {
   const app = useApp();
@@ -18,6 +19,12 @@ export default function Workout() {
       />
       <Card style={styles.hero}>
         <Pill text="AI RECOMMENDATION" icon="sparkles" />
+        <AppPhoto
+          photo="strength"
+          label="Dumbbell strength training in a bright gym"
+          style={styles.heroPhoto}
+          contain
+        />
         <Text style={styles.title}>{recommendation.title}</Text>
         <Body muted>{recommendation.subtitle}</Body>
         <View style={styles.metrics}>
@@ -153,6 +160,7 @@ export default function Workout() {
 }
 const styles = StyleSheet.create({
   hero: { backgroundColor: colors.primarySoft, borderColor: colors.primarySoft, gap: 10 },
+  heroPhoto: { height: 200, borderRadius: 14 },
   title: {
     fontFamily: fonts.heavy,
     color: colors.ink,

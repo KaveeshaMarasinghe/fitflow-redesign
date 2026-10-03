@@ -4,6 +4,7 @@ import { colors, fonts } from '../constants/theme';
 import { useApp } from '../data/AppProvider';
 import { recommendation } from '../data/mock';
 import { Button, Icon, s } from './ui';
+import { AppPhoto } from './AppPhoto';
 
 export function WorkoutCard() {
   const { duration, workoutCalories, schedule } = useApp();
@@ -16,13 +17,22 @@ export function WorkoutCard() {
         </View>
         <Text style={styles.date}>{schedule}</Text>
       </View>
+      <View style={styles.photoFrame}>
+        <AppPhoto
+          photo="strength"
+          label="Athlete training with dumbbells in a bright gym"
+          style={styles.photo}
+          contain
+        />
+        <View style={styles.photoBadge}>
+          <Icon name="barbell" size={15} color={colors.primary} />
+          <Text style={styles.tagText}>FULL BODY STRENGTH</Text>
+        </View>
+      </View>
       <View style={s.between}>
         <View style={s.flex}>
           <Text style={styles.title}>{recommendation.title}</Text>
           <Text style={styles.caption}>A little stronger, every day.</Text>
-        </View>
-        <View style={styles.symbol}>
-          <Icon name="barbell" size={32} color={colors.primary} />
         </View>
       </View>
       <View style={styles.metadata}>
@@ -46,7 +56,21 @@ export function WorkoutCard() {
   );
 }
 const styles = StyleSheet.create({
-  card: { borderRadius: 12, backgroundColor: colors.primarySoft, padding: 12, gap: 10 },
+  card: { borderRadius: 22, backgroundColor: colors.primarySoft, padding: 12, gap: 12 },
+  photoFrame: { borderRadius: 16, overflow: 'hidden' },
+  photo: { height: 200 },
+  photoBadge: {
+    position: 'absolute',
+    bottom: 10,
+    left: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    borderRadius: 20,
+    backgroundColor: colors.surface,
+  },
   tag: { flexDirection: 'row', alignItems: 'center', gap: 7 },
   tagText: { fontFamily: fonts.bold, fontSize: 10, letterSpacing: 0.6, color: colors.primary },
   date: { fontFamily: fonts.medium, color: colors.muted, fontSize: 12 },
@@ -58,14 +82,6 @@ const styles = StyleSheet.create({
     letterSpacing: -0.6,
   },
   caption: { fontFamily: fonts.regular, color: colors.muted, fontSize: 12, marginTop: 2 },
-  symbol: {
-    width: 50,
-    height: 50,
-    borderRadius: 12,
-    backgroundColor: colors.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   metadata: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 10 },
   metaText: { fontFamily: fonts.medium, color: colors.muted, fontSize: 11 },
 });

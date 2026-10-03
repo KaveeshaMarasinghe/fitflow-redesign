@@ -28,6 +28,7 @@ export type Post = {
   likes: number;
   liked: boolean;
   comments: string[];
+  photo?: 'running' | 'strength' | 'welcome';
 };
 export type Profile = {
   name: string;

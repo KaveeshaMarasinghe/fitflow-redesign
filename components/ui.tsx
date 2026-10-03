@@ -13,6 +13,8 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { colors, fonts } from '../constants/theme';
+import { AppPhoto } from './AppPhoto';
+import type { PhotoName } from '../data/photos';
 
 export type IconName = React.ComponentProps<typeof Ionicons>['name'];
 export function Icon({
@@ -117,10 +119,12 @@ export function Avatar({
   initials = 'AM',
   size = 46,
   background = colors.primarySoft,
+  photo,
 }: {
   initials?: string;
   size?: number;
   background?: string;
+  photo?: PhotoName;
 }) {
   return (
     <View
@@ -129,7 +133,15 @@ export function Avatar({
         { width: size, height: size, borderRadius: size / 2, backgroundColor: background },
       ]}
     >
-      <Text style={[s.avatarText, { fontSize: size * 0.3 }]}>{initials}</Text>
+      {photo ? (
+        <AppPhoto
+          photo={photo}
+          label="Sample profile portrait"
+          style={{ width: size, height: size, borderRadius: size / 2 }}
+        />
+      ) : (
+        <Text style={[s.avatarText, { fontSize: size * 0.3 }]}>{initials}</Text>
+      )}
     </View>
   );
 }
@@ -256,17 +268,17 @@ export function StatCard({
 export const s = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
   screen: {
-    padding: 8,
-    paddingBottom: 12,
-    gap: 8,
+    padding: 16,
+    paddingBottom: 24,
+    gap: 14,
     width: '100%',
     maxWidth: 620,
     alignSelf: 'center',
   },
   card: {
     backgroundColor: colors.surface,
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: 18,
+    padding: 14,
     borderWidth: 1,
     borderColor: colors.line,
     gap: 8,

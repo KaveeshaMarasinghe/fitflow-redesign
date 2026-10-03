@@ -28,15 +28,15 @@ const quickActions: {
     title: 'AI Workout',
     path: '/(tabs)/workout',
     icon: 'sparkles-outline',
-    background: colors.primarySoft,
+    background: '#DBEAFE',
   },
-  { title: 'Progress', path: '/(tabs)/progress', icon: 'trending-up', background: colors.sky },
-  { title: 'Nutrition', path: '/(tabs)/nutrition', icon: 'leaf-outline', background: colors.peach },
+  { title: 'Progress', path: '/(tabs)/progress', icon: 'trending-up', background: '#EDE9FE' },
+  { title: 'Nutrition', path: '/(tabs)/nutrition', icon: 'leaf-outline', background: '#DCFCE7' },
   {
     title: 'Community',
     path: '/(tabs)/community',
     icon: 'people-outline',
-    background: colors.lavender,
+    background: '#FFE4E6',
   },
 ];
 export default function Home() {
@@ -66,6 +66,7 @@ export default function Home() {
               .slice(0, 2)
               .join('')}
             size={50}
+            photo="alex"
           />
         </Pressable>
       </View>
@@ -118,7 +119,7 @@ export default function Home() {
             style={({ pressed }) => [styles.quickAction, pressed && s.pressed]}
           >
             <View style={[styles.quickIcon, { backgroundColor: action.background }]}>
-              <Icon name={action.icon} color={colors.ink} />
+              <Icon name={action.icon} color={colors.primary} />
             </View>
             <Text style={styles.quickText}>{action.title}</Text>
           </Pressable>

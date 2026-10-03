@@ -88,40 +88,6 @@ export default function Nutrition() {
           </Card>
         ))}
       </View>
-      <Card>
-        <View style={s.between}>
-          <View style={s.row}>
-            <Icon name="water" color={colors.blue} />
-            <View>
-              <Text style={s.heading}>Stay in your flow</Text>
-              <Text style={s.label}>{(water * 0.25).toFixed(2)} L of 2 L · 250 mL per glass</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.waterGlasses}>
-          {Array.from({ length: 8 }, (_, index) => (
-            <Icon
-              key={index}
-              name={index < water ? 'water' : 'water-outline'}
-              color={index < water ? colors.blue : colors.outline}
-              size={23}
-            />
-          ))}
-        </View>
-        <View style={s.between}>
-          <IconButton
-            name="remove"
-            label="Remove one glass of water"
-            onPress={() => setWater(Math.max(0, water - 1))}
-          />
-          <Text style={s.label}>{water} glasses logged</Text>
-          <IconButton
-            name="add"
-            label="Add one glass of water"
-            onPress={() => setWater(Math.min(16, water + 1))}
-          />
-        </View>
-      </Card>
       <Section
         title="On the menu"
         action="Add Meal"
@@ -162,6 +128,40 @@ export default function Nutrition() {
           )}
         </View>
       ))}
+      <Card>
+        <View style={s.between}>
+          <View style={s.row}>
+            <Icon name="water" color={colors.blue} />
+            <View>
+              <Text style={s.heading}>Stay in your flow</Text>
+              <Text style={s.label}>{(water * 0.25).toFixed(2)} L of 2 L · 250 mL per glass</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.waterGlasses}>
+          {Array.from({ length: 8 }, (_, index) => (
+            <Icon
+              key={index}
+              name={index < water ? 'water' : 'water-outline'}
+              color={index < water ? colors.blue : colors.outline}
+              size={23}
+            />
+          ))}
+        </View>
+        <View style={s.between}>
+          <IconButton
+            name="remove"
+            label="Remove one glass of water"
+            onPress={() => setWater(Math.max(0, water - 1))}
+          />
+          <Text style={s.label}>{water} glasses logged</Text>
+          <IconButton
+            name="add"
+            label="Add one glass of water"
+            onPress={() => setWater(Math.min(16, water + 1))}
+          />
+        </View>
+      </Card>
       <Text style={s.label}>Sample nutrition values are estimates, not dietary advice.</Text>
       <Sheet visible={adding} title="Add something nourishing" onClose={() => setAdding(false)}>
         <Body muted>Choose a sample meal to add to your day.</Body>
@@ -182,7 +182,7 @@ export default function Nutrition() {
         </View>
         {foodOptions.map((food) => (
           <Card key={food.name}>
-            <Text style={s.heading}>{food.name}</Text>
+            <MealCard meal={{ ...food, id: food.name, group }} />
             <Body muted>
               {food.calories} kcal · {food.protein} g protein · {food.portion}
             </Body>

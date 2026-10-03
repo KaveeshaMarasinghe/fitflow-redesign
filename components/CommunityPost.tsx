@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { colors, fonts } from '../constants/theme';
 import type { Post } from '../types';
 import { Avatar, Body, Card, Icon, Pill, s } from './ui';
+import { AppPhoto } from './AppPhoto';
 
 export function CommunityPost({
   post,
@@ -24,6 +25,13 @@ export function CommunityPost({
       </View>
       <Pill text={post.activity} icon="fitness-outline" />
       <Body>{post.caption}</Body>
+      {post.photo && (
+        <AppPhoto
+          photo={post.photo}
+          label={`Sample community photo: ${post.activity}`}
+          style={styles.photo}
+        />
+      )}
       <View style={styles.divider} />
       <View style={s.row}>
         <Pressable
@@ -54,6 +62,7 @@ export function CommunityPost({
   );
 }
 const styles = StyleSheet.create({
+  photo: { height: 190, borderRadius: 14 },
   divider: { height: 1, backgroundColor: colors.line },
   action: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 6, paddingRight: 8 },
   count: { fontFamily: fonts.medium, fontSize: 12, color: colors.muted },

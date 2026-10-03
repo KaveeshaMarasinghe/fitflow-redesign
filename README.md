@@ -72,7 +72,7 @@ components/           Shared cards, controls, sheets, artwork
 constants/            Colors and typography
 data/                 Typed mock data, session provider, legal copy
 types/                Domain types
-assets/               Runtime icon, adaptive foreground, splash
+assets/               Runtime icons, splash, bundled fitness and food photos
 scripts/              Optional geometric asset generator
 tests/                Meaningful browser interaction/layout tests
 store-assets/         Listing icons, graphics, actual preview captures

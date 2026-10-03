@@ -1,7 +1,7 @@
 import { router } from 'expo-router';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { colors, fonts } from '../constants/theme';
-import { EnergyArtwork } from '../components/EnergyArtwork';
+import { AppPhoto } from '../components/AppPhoto';
 import { Body, Button, Icon, Screen, s } from '../components/ui';
 
 export default function Welcome() {
@@ -18,7 +18,11 @@ export default function Welcome() {
           <Icon name="leaf-outline" color={colors.primary} size={16} />
           <Text style={styles.labelText}>YOUR EVERYDAY, ELEVATED</Text>
         </View>
-        <EnergyArtwork />
+        <AppPhoto
+          photo="welcome"
+          label="Athlete stretching on a yoga mat in a bright blue studio"
+          style={styles.heroPhoto}
+        />
         <View style={styles.visualFooter}>
           <Text style={s.heading}>Find your rhythm.</Text>
           <Text style={s.label}>Movement · Mindset · Momentum</Text>
@@ -62,7 +66,14 @@ const styles = StyleSheet.create({
   brand: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingTop: 4 },
   logo: { width: 38, height: 38, borderRadius: 12 },
   brandName: { fontFamily: fonts.heavy, color: colors.ink, fontSize: 27, letterSpacing: -1 },
-  visual: { backgroundColor: colors.primarySoft, borderRadius: 16, padding: 12, marginTop: 0 },
+  visual: {
+    backgroundColor: colors.primarySoft,
+    borderRadius: 24,
+    padding: 12,
+    marginTop: 0,
+    overflow: 'hidden',
+  },
+  heroPhoto: { height: 280, borderRadius: 16, marginVertical: 8 },
   label: { flexDirection: 'row', alignItems: 'center', gap: 7 },
   labelText: { fontFamily: fonts.bold, fontSize: 9, color: colors.primary, letterSpacing: 1 },
   visualFooter: { alignItems: 'center', gap: 5 },

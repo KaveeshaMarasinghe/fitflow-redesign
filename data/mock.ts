@@ -60,6 +60,7 @@ export const exercises: Exercise[] = [
 export const initialPosts: Post[] = [
   {
     id: 'p1',
+    photo: 'running',
     name: 'Maya Perera',
     initials: 'MP',
     color: '#F1F5F9',
@@ -73,6 +74,7 @@ export const initialPosts: Post[] = [
   },
   {
     id: 'p2',
+    photo: 'strength',
     name: 'Daniel Silva',
     initials: 'DS',
     color: '#EFF6FF',
@@ -86,6 +88,7 @@ export const initialPosts: Post[] = [
   },
   {
     id: 'p3',
+    photo: 'welcome',
     name: 'Aisha Fernando',
     initials: 'AF',
     color: '#F1F5F9',

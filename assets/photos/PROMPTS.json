@@ -1,0 +1,38 @@
+{
+  "generator": "Built-in image_gen tool",
+  "generatedOn": "2026-10-04",
+  "assets": [
+    {
+      "file": "welcome.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: fitness mobile app welcome hero photography. Create one portrait editorial fitness photo, 1024x1536. A healthy athletic adult South Asian woman wearing a royal blue sports top and black leggings sits on a pale blue yoga mat, stretching one leg to the side, relaxed and focused, natural anatomically correct pose, full body visible. Bright airy pale ice-blue studio backdrop, subtle soft blue curved background, gentle daylight, premium natural lifestyle photography, generous light background at top and bottom, subject centered. No text, no letters, no logo, no watermark, no interface. This is for a clean white and bright blue fitness app."
+    },
+    {
+      "file": "strength.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape fitness app workout banner. One wide 1536x1024 professional editorial photograph of an athletic adult South Asian woman in a royal blue sports top and charcoal leggings performing a controlled dumbbell workout in a bright modern gym. Medium-wide composition, body and dumbbells clearly visible, subject toward right, softly blurred gym equipment, natural light, realistic anatomy and hands, premium fitness magazine photography. No text, labels, logos or watermark."
+    },
+    {
+      "file": "running.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape fitness community feed photo. One wide 1536x1024 natural editorial photograph of an adult South Asian woman in blue athletic clothing running along a green park path at sunrise. Three quarter side view, runner visible in frame with natural running stride, lush greenery and warm morning light, candid optimistic healthy lifestyle photo, realistic anatomy. No text, logos or watermark."
+    },
+    {
+      "file": "oats.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: square food thumbnail for nutrition app. One 1024x1024 premium food photograph of a ceramic bowl of creamy overnight oats topped with fresh blueberries, raspberries, banana slices and a few almonds. Close three quarter overhead composition centered, soft natural daylight, pale white table, realistic appetizing textures, no text or watermark."
+    },
+    {
+      "file": "chicken.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: square food thumbnail for nutrition app. One 1024x1024 premium food photograph of a balanced meal of sliced grilled chicken breast, fluffy brown rice and crisp green vegetables on a white ceramic plate. Close overhead composition centered, pale white table, natural daylight, appetizing realistic food textures. No text or watermark."
+    },
+    {
+      "file": "yogurt.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: square food thumbnail for nutrition app. One 1024x1024 premium food photograph of thick Greek yogurt in a small white bowl topped with roasted almonds and a gentle drizzle of honey. Close three quarter overhead composition centered, pale white table, soft daylight, realistic textures, clean minimal food styling. No text or watermark."
+    },
+    {
+      "file": "salmon.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: square food thumbnail for nutrition app. One 1024x1024 premium food photograph of grilled salmon fillet with roasted broccoli, carrots, zucchini and lemon on a white ceramic plate. Close overhead composition centered, pale white table, soft natural daylight, appetizing realistic textures, clean minimal food styling. No text or watermark."
+    },
+    {
+      "file": "alex.jpg",
+      "prompt": "Use case: photorealistic-natural. Asset type: square fictional fitness profile portrait. One 1024x1024 natural editorial portrait of a friendly adult South Asian man aged around 28, short neat black hair, clean shaven, wearing a blue athletic t-shirt. Head and shoulders centered with generous room around head for circular crop, light ice blue background, soft window light, genuine approachable smile, realistic skin texture. No text, logo or watermark."
+    }
+  ]
+}

@@ -47,6 +47,7 @@ export default function Profile() {
             .slice(0, 2)
             .join('')}
           size={90}
+          photo="alex"
         />
         <Text style={styles.name}>{app.profile.name}</Text>
         <Pill text={`${app.profile.level} · ${app.profile.goal}`} icon="fitness-outline" />
