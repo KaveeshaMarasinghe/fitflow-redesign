@@ -1,0 +1,27 @@
+export const colors = {
+  background: '#F7F8FA',
+  surface: '#FFFFFF',
+  ink: '#172033',
+  muted: '#667085',
+  primary: '#2563EB',
+  primarySoft: '#EFF6FF',
+  accent: '#BFDBFE',
+  line: '#E4E7EC',
+  neutral: '#F1F5F9',
+  chart: '#93B4F3',
+  outline: '#CBD5E1',
+  overlay: '#17203366',
+  orange: '#A85A0C',
+  peach: '#F8FAFC',
+  blue: '#2563EB',
+  sky: '#EFF6FF',
+  red: '#C13E4A',
+  purple: '#667085',
+  lavender: '#F1F5F9',
+};
+export const fonts = {
+  regular: 'Manrope_400Regular',
+  medium: 'Manrope_600SemiBold',
+  bold: 'Manrope_700Bold',
+  heavy: 'Manrope_800ExtraBold',
+};

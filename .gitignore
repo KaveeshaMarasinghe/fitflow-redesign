@@ -1,0 +1,81 @@
+# Keep documentation local
+/docs/
+
+# Flutter / Dart
+**/.dart_tool/
+**/build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+
+# Node.js
+node_modules/
+dist/
+.env
+
+# Logs, caches and generated test coverage
+*.log
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+coverage/
+.nyc_output/
+
+# Local environment values (keep sanitized examples shareable)
+.env.*
+!.env.example
+!.env.*.example
+
+# Expo local state and Android release artifacts
+.expo/
+.expo-shared/
+expo-env.d.ts
+.metro-health-check*
+*.apk
+*.aab
+*.ipa
+web-build/
+android-export/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+
+# Native build caches and machine-specific Android settings
+.gradle/
+.cxx/
+local.properties
+
+# Signing credentials must never enter source control
+*.jks
+*.keystore
+*.p12
+*.pfx
+credentials.json
+keystores/
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
